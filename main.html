@@ -1,8 +1,130 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook Login</title>
-  </head>
-  <body>
-    <!-- Write your code here -->
-  </body>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            background-color: #f6f6f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left, .right {
+            display: inline-block;
+        }
+
+        /* Left Section */
+        .left {
+            width: 450px;
+            margin-top: 70px;
+            text-align: center;
+        }
+
+        .left img {
+            width: 200px;
+        }
+
+        .left p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        /* Right Section */
+        .right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 30px;
+        }
+
+        .right form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #ccc;
+            gap: 10px;
+        }
+
+        .right input {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .right button {
+            background-color: #1877f2;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+        }
+
+        .right a {
+            text-decoration: none;
+            color: #1877f2;
+            text-align: center;
+        }
+
+        .signup {
+            background-color: #42b72a;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left">
+            <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook logo">
+            <p>Facebook helps you connect and share with the people in your life.</p>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right">
+            <form action="#">
+                <!-- Email Input -->
+                <input type="text" id="email" placeholder="Email address or phone number" required>
+                <!-- Password Input -->
+                <input type="password" id="password" placeholder="Password" required>
+                <!-- Login Button -->
+                <button type="submit">Log in</button>
+                <!-- Forgotten Account Link -->
+                <a href="#">Forgotten account?</a>
+            </form>
+            <!-- Sign Up Button -->
+            <button class="signup">Create new account</button>
+        </div>
+    </div>
+
+</body>
+
 </html>
